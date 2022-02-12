@@ -1,4 +1,3 @@
-import pyautogui as pa
 import time
 import string
 import itertools
