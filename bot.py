@@ -66,9 +66,8 @@ def checkCorrect(passed):
 def refineOptions():
     filtered = list(filter(checkCorrect, bank))
     return filtered
-    
 
-# gets gets state of the previous row and returns the next guess
+# gets the state of the previous row and updates requirments
 def playRow():
     global bank, row
     # get the current row
@@ -114,4 +113,3 @@ print("Found that the word was",isSolved,"after",row,"guesses")
 print(correctOrder)
 
 print("That took ", (time.time()-start), " seconds")
-
